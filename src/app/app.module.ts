@@ -24,6 +24,10 @@ import { PageNotFoundComponent } from './store/pageNotFound.component'; //Import
             canActivate: [StoreFirstGuard]
         },
         {
+            path: "", component: StoreComponent,
+            canActivate: [StoreFirstGuard]
+        },
+        {
             path: "cart", component: CartDetailComponent,
             canActivate: [StoreFirstGuard]
         },
